@@ -1,2 +1,2 @@
 # Eletronicos
-Atividade de Programação II
+Criação da Classe Dispositivos e do Objeto Computadores
