@@ -1,3 +1,4 @@
+//criação da classe Dispositivos e do objeto computadores
 #include <iostream>
 using std::cout;
 
