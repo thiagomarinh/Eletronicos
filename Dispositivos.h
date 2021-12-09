@@ -15,6 +15,7 @@ public:
     Dispositivos(string, int = 0);
     Dispositivos(int);
     Dispositivos( const Dispositivos& );
+    Dispositivos(int, const Data & = Data(25,9,2014));
 
     void setMarcaComputador( string nome, int memoria);
 
@@ -31,6 +32,9 @@ public:
 
     void printarUsuarios( ) const;
 
+    void mostrarData() const;
+
+    void mostrarInfo( );
     
 
 
@@ -47,6 +51,11 @@ private:
 
     static const int NSSD = 5;
     double ssd[ NSSD ];
+
+    const static Data RELEASEDATE;
+
+    Data dataAtual;
+
 
 };
 #endif // GRADEBOOK_H

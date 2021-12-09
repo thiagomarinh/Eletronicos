@@ -6,6 +6,9 @@ using std::cout;
 #include <string>
 using std::string;
 
+
+const Data Dispositivos::RELEASEDATE = Data(25,9,2014);
+
 Dispositivos::Dispositivos()
 :marcaComputador(""), memoria()
 {
@@ -79,4 +82,15 @@ void Dispositivos::mensagemTela( bool check ) const
         cout << " Seu computador tem " << memoria << " gb de memoria.\n";  
     }
 
+}
+void Dispositivos::mostrarInfo( )
+{
+	cout << "A data de lancamento deste modelo eh:" << '\n';
+		  RELEASEDATE.print(); 
+		 
+}
+
+void Dispositivos::mostrarData( ) const
+{
+	cout << "A data atual eh: "; dataAtual.print();	
 }

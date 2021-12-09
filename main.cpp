@@ -7,9 +7,12 @@ using std::getline;
 
 #include "Dispositivos.h"
 #include "Dispositivos.cpp"
+#include "Data.h"
+#include "Data.cpp"
 
 int main()
 {
+    Dispositivos computadores(0, Data(30,9,2021));
     Dispositivos computadores("accer", 8);
     Dispositivos computadores1(computadores);
     string marcaComputador;
