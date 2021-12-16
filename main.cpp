@@ -9,23 +9,31 @@ using std::getline;
 #include "Dispositivos.cpp"
 #include "Data.h"
 #include "Data.cpp"
+#include "Compra.cpp"
+#include "Compra.h"
 
 int main()
 {
-    Dispositivos computadores(0, Data(30,9,2021));
+    
     Dispositivos computadores("accer", 8);
     Dispositivos computadores1(computadores);
     string marcaComputador;
     int memoria;
+
+    Compra pagamento("cartão de credito");
+    Compra quantia(1500);
 
     
     
     computadores.setMarcaComputador( marcaComputador, memoria );
 
     computadores.imprimeMensagem();
+
     computadores1.imprimeMensagem();
 
     computadores.printarUsuarios( );
+
+    pagamento.imprimeValor();
 
     cout << "\nimprimindo numero ssd.\n";
     const int NSSD = 5;

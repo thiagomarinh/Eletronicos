@@ -7,6 +7,7 @@ using std::cout;
 using std::string;
 
 
+
 const Data Dispositivos::RELEASEDATE = Data(25,9,2014);
 
 Dispositivos::Dispositivos()

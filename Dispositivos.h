@@ -7,6 +7,8 @@ using std::cout;
 #include <string>
 using std::string;
 
+#include "Data.h"
+
 class Dispositivos
 {
 public:
