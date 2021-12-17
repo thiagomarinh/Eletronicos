@@ -20,6 +20,7 @@ Dispositivos::Dispositivos(string marcaComputador, int memoria)
     setMarcaComputador(marcaComputador, memoria);
 }
 
+//contrutor de copia
 Dispositivos::Dispositivos( const Dispositivos& other )
 :marcaComputador(other.marcaComputador), memoria(other.memoria), MAXSIZENAME(other.MAXSIZENAME)
 {

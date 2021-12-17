@@ -7,6 +7,7 @@ using std::cout;
 #include <string>
 using std::string;
 
+//composição
 #include "Data.h"
 
 class Dispositivos
